@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import "../shared/styles/globals.css";
 import Providers from "@/shared/utils/Providers";
-import CustomFont from "@next/font/local";
-import { ClerkProvider } from '@clerk/nextjs'
+import local from "@next/font/local";
+import { ClerkProvider } from "@clerk/nextjs";
 
-const clashDisplay = CustomFont({
+const clashDisplay = local({
   src: "../assets/fonts/ClashDisplay-Variable.ttf",
   variable: "--font-clashDisplay",
   weight: "700",
@@ -22,11 +22,11 @@ export default function RootLayout({
 }>) {
   return (
     <ClerkProvider>
-    <html lang="en">
-      <body className={`${clashDisplay.variable}`}>
-        <Providers>{children}</Providers>
-      </body>
-    </html>
+      <html lang="en">
+        <body className={`${clashDisplay.variable}`}>
+          <Providers>{children}</Providers>
+        </body>
+      </html>
     </ClerkProvider>
   );
 }
