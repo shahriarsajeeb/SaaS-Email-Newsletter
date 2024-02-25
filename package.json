@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@clerk/nextjs": "^4.29.7",
+    "@emotion/react": "^11.11.3",
     "@mui/material": "^5.15.10",
     "@mui/x-data-grid": "^6.19.5",
     "@nextui-org/react": "^2.2.9",
