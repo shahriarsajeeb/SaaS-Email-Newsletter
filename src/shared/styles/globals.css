@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: black;
+  background: white;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+.spin-slow {
+  animation: spin 30s linear infinite; /* Adjust the time for the speed of the spin */
+}
+.font-style {
+  background: #fec8eb;
+  padding: 0px 5px;
+}
+.benefit-cover {
+  background-image: url("https://res.cloudinary.com/dkg6jv4l0/image/upload/v1706912822/lmpydkyegtpbhecq1ejw.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.input {
+  width: 100%;
+  background: transparent;
+  padding: 5px;
+  outline: none;
+}
+.jswdLm .blockbuilder-branding{
+  display: none!important;
+}
