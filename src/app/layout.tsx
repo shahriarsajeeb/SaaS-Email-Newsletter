@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import "../shared/styles/globals.css";
 import Providers from "@/shared/utils/Providers";
-import localFont from "@next/font/local";
+import CustomFont from "@next/font/local";
 import { ClerkProvider } from '@clerk/nextjs'
 
-const clashDisplay = localFont({
+const clashDisplay = CustomFont({
   src: "../assets/fonts/ClashDisplay-Variable.ttf",
   variable: "--font-clashDisplay",
   weight: "700",
