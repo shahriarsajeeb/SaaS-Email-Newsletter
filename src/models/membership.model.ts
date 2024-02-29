@@ -17,6 +17,5 @@ const membershipSchema = new Schema(
   { timestamps: true }
 );
 
-const Membership = mongoose.models.Membership || mongoose.model("Membership", membershipSchema);
+const Membership = mongoose.models.Memberships || mongoose.model("Memberships", membershipSchema);
 export default Membership;
- 

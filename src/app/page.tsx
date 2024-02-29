@@ -3,7 +3,7 @@ import Home from "@/modules/home/home";
 const Page = () => {
   return (
     <div>
-      <Home />
+      <Home /> 
     </div>
   );
 };

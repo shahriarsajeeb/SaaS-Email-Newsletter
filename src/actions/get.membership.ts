@@ -6,14 +6,15 @@ import { currentUser } from "@clerk/nextjs";
 
 export const getMemberShip = async () => {
   try {
-    await connectDb();
-
-    const user = await currentUser();
-
-    const membership = await Membership.findOne({
-      userId: user?.id,
+    await connectDb().then(async (res) => {
+      const user = await currentUser();
+      if (user) {
+        const membership = await Membership.findOne({
+          userId: user?.id,
+        });
+        return membership;
+      }
     });
-    return membership;
   } catch (error) {
     console.log(error);
   }

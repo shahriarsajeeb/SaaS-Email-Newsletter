@@ -63,7 +63,7 @@ const Page = () => {
       )}
       {activeItem === "API Access" && (
         <div>
-          {data?.plan === "Grow" ? (
+          {data?.plan === "LAUNCH" ? (
             <div className="w-full h-[90vh] flex items-center justify-center">
               <h3>
                 Please update your subscription plan to get access of API.

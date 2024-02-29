@@ -23,7 +23,7 @@ const UserPlan = () => {
     <div className="w-full my-3 p-3 bg-[#FDF1F8] rounded hover:shadow-xl cursor-pointer">
       <div className="w-full flex items-center">
         <h5 className="text-lg font-medium">
-          {membershipLoading ? "..." : membershipData?.plan} Plan
+          {membershipLoading ? "..." : "GROW"} Plan
         </h5>
         <div
           className="w-[95px] shadow ml-2 cursor-pointer h-[32px] flex justify-center items-center space-x-1 rounded-lg bg-[#E77CAE]"
@@ -42,7 +42,7 @@ const UserPlan = () => {
       />
       <h6 className="text-[#831743]">
         {loading ? "..." : data?.length} of{" "}
-        {membershipData?.plan === "Grow"
+        {membershipData?.plan === "LAUNCH"
           ? "2500"
           : membershipData?.plan === "SCALE"
           ? "10,000"
